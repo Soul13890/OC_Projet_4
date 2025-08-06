@@ -10,12 +10,11 @@ import Footer from './components/Footer'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router>
-      <Header />
+    <Router>      
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Fiche_logement" element={<Logement />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/logement" element={<Logement />} />
+        <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

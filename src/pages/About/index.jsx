@@ -1,11 +1,13 @@
+import Header from "../../components/Header"
+
 function About() {  
 
   return (
-    <>
-      <div>
-        <h1>A propos</h1>
-      </div>
-    </>
+    
+    <div>
+      <Header />
+      <h1>A propos</h1>
+    </div>      
   )
 }
 

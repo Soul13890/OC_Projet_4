@@ -1,18 +1,18 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.svg'
-import "../../style/header.scss"
+import "./header.scss"
+import Navbar from '../Navbar'
 
 function Header() {
+
   return (
-    <nav>
+    <header>
       <Link to="/">
-        <img src={Logo} />
+        <img src={Logo} alt="Loge de Kasa" />
       </Link>
-      <div>
-        <Link to="/" className='link'>Accueil</Link>        
-        <Link to="/About" className='link'>A propos</Link>
-      </div>
-    </nav>
+
+      <Navbar />      
+    </header>
   )
 }
 
