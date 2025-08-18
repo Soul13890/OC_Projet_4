@@ -1,0 +1,17 @@
+.card-container{
+    max-width: 1240px;
+    margin: 50px auto;
+    background-color: #F6F6F6;
+    border-radius: 25px;    
+}
+
+.card-list{
+    max-width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    padding: 50px;    
+}

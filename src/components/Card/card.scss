@@ -1,0 +1,23 @@
+.card-item {
+    width: 340px;
+    height: 340px;
+    
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.card-item-cover{
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;    
+}
+
+.card-item-name{
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-size: 18px;    
+    font-weight: 700;
+    max-width: 60%;
+}
