@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
       <Link to="/">
-        <img src={Logo} alt="Loge de Kasa" />
+        <img className="logo" src={Logo} alt="Loge de Kasa" />
       </Link>
 
       <Navbar />      

@@ -23,3 +23,18 @@
     font-weight: 500;    
     text-decoration: underline;
 }
+
+@media screen and (max-width : 550px) {
+    .nav-menu{
+        gap: 26px;
+    }
+    
+    .nav-menu li a{
+        font-size: 12px;  
+        text-transform: uppercase;
+    }
+
+    .active{
+        font-size: 12px;  
+    }
+}

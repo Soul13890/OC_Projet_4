@@ -1,6 +1,6 @@
 import Banner from "../../components/Banner"
 import Header from "../../components/Header"
-import CardContainer from "../../components/CardContainer"
+import Gallery from "../../components/Gallery"
 
 function Home() {  
 
@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Header />
       <Banner />
-      <CardContainer />
+      <Gallery />
     </div>    
   )
 }

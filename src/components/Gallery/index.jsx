@@ -1,8 +1,8 @@
 import data from '../../datas/data.json'
 import Card from '../Card'
-import "./cardContainer.scss"
+import "./gallery.scss"
 
-function CardContainer() {
+function Gallery() {
     return(
         <div className='card-container'>
             <ul className='card-list'>
@@ -19,4 +19,4 @@ function CardContainer() {
     )
 }
 
-export default CardContainer
+export default Gallery

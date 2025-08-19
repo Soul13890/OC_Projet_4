@@ -1,6 +1,6 @@
 .banner{
-    margin: auto;
-    width: 100%;
+    margin: 20px auto;
+    width: 95%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@
     border-radius: 25px;
     background: black;
     height: 223px;
-    max-width: 1240px;    
+    max-width: 1240px;  
 }
 
 .bannerImg{
@@ -37,4 +37,17 @@
     align-items: center;
     font-size: 48px;
     text-shadow: 0 4px 4px rgb(0, 0, 0);
+    padding: 30px;       
+}
+
+@media only screen and (max-width : 675px) {
+    .banner, .bannerBackground, .bannerImg{
+        height: 111px;  
+        border-radius: 10px;        
+    }
+    
+    .banner h1{
+        font-size: 24px;                   
+        padding: 20px; 
+    }    
 }

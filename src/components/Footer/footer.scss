@@ -12,4 +12,11 @@ footer{
 
 footer p{
     margin: 0;
+    text-align: center;
+}
+
+@media only screen and (max-width : 375px) {
+    footer p {
+        font-size: 12px;     
+    }
 }
