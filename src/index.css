@@ -163,6 +163,30 @@
     font-size: 12px;
   }
 }
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  margin: 80px auto 100px auto;
+}
+.error-container-title {
+  font-size: 288px;
+  color: #FF6060;
+  font-weight: 700;
+}
+.error-container-text {
+  font-size: 36px;
+  color: #FF6060;
+  font-weight: 500;
+}
+.error-container-link {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
 footer {
   background-color: black;
   display: flex;

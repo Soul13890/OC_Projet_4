@@ -1,10 +1,11 @@
 import Header from "../../components/Header"
+import ErrorMessage from "../../components/ErrorMessage"
 
 function Error() {
   return (
     <div>
         <Header />
-        <h1>Erreur 404</h1>
+        <ErrorMessage />
     </div>
   )
 }

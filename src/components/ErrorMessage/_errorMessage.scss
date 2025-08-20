@@ -1,0 +1,24 @@
+.error-container{
+    @include flexCenter;
+    flex-direction: column;
+    gap: 100px;
+    margin: 80px auto 100px auto;
+
+    &-title{        
+        font-size: 288px;
+        color: $primary;
+        font-weight: 700;       
+    }
+
+    &-text{
+        font-size: 36px;
+        color: $primary;
+        font-weight: 500;
+    }
+
+    &-link{
+        font-size: 18px;
+        color: $black;
+        font-weight: 500;
+    }
+}
