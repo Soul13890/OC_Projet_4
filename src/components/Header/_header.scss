@@ -1,0 +1,23 @@
+header{
+    @include flexSpaceBetween;
+    margin: 50px auto;
+    max-width: 1240px;
+    width: 95%;
+    
+    @media only screen and (max-width : 550px)
+    {        
+        margin: 20px auto;
+        
+        .logo{
+            max-width: 145px;
+            height: auto; 
+        }
+    }
+
+    @media only screen and (max-width : 350px) {
+        .logo {        
+            max-width: 75px;
+            height: auto;        
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.card-container{
+    max-width: 1240px;
+    width: 95%;
+    margin: 50px auto;
+    background-color: $gray;
+    border-radius: 25px;
+
+    @media only screen and (max-width : 400px){
+        background-color: $white;
+        margin: 20px auto;
+    }
+
+    .card-list{
+        max-width: 1240px;
+        @include flexCenter;
+        flex-wrap: wrap;        
+        gap: 50px;
+        list-style: none;
+        padding: 50px;
+
+         @media only screen and (max-width : 400px){
+            padding: 0px;
+            gap: 22px;
+        }
+    }
+}

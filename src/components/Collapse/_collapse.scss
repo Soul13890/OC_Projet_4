@@ -1,6 +1,6 @@
 .collapse-container{
     margin: 50px auto;
-    display: flex;
+    @include flexCenter;
     flex-direction: column;
     gap: 30px;
 }
@@ -9,29 +9,26 @@
     width: 80%;    
     margin: 0 auto;    
     border-radius: 5px;
-    background-color: white;
+    background-color: $white;
 
     .collapse-header {
         width: 100%;
         border: none;
         border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        @include flexSpaceBetween;
         padding: 10px 20px 10px 15px;
-        background-color: red;
+        background-color: $primary;
 
         h3 {
-            color: white;
+            color: $white;
             font-weight: 700;
             font-size: 24px;
             font-style: bold;
         }
 
         .arrow {
-            width: 10px;
-            height: 10px;
-            border: solid white;
+            @include widthAndHeight(10px);  
+            border: solid $white;
             border-width: 0 3px 3px 0;            
             transform: rotate(45deg);
             transition: transform 0.3s ease;
@@ -51,17 +48,15 @@
         overflow: hidden;
         max-height: 0;
         transition: max-height 0.5s ease-in-out;  
-        background-color: #f6f6f6;  
+        background-color: $gray;  
         
         &.open {
-            display: flex;            
-            justify-items: center;
-            align-items: center;
+            @include flexCenter;
             max-height: 100vh;            
         }
         
         p {
-            color: black;
+            color: $black;
             font-size: 16px;           
             padding: 20px;
         }
@@ -87,13 +82,7 @@
         .collapse-content {
             p {
                 font-size: 12px;
-            }
-
-            ul {
-                li {
-                    font-size: 12px;
-                }
-            }
+            }           
         }
     }
 }

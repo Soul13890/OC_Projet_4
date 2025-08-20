@@ -6,7 +6,7 @@ import Error from './pages/Error'
 import Logement from './pages/Fiche-logement'
 import About from './pages/About'
 import Footer from './components/Footer'
-import "./style.scss"
+import "./index.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

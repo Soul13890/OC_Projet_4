@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+// Variables
+$primary: #FF6060;
+$white: white;
+$gray: #F6F6F6;
+$black: black;
+$bannerOpacity: rgba(0, 0, 0, 0.6);
+
+// Mixins
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexSpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexEnd{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+@mixin widthAndHeight($size){
+    width: $size;
+    height: $size;
+}
+
+// CSS Général
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}

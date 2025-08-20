@@ -1,6 +1,5 @@
 import BannerHome from "../../assets/banner-home.png"
 import BannerAbout from "../../assets/banner-about.png"
-import "./banner.scss"
 import { useLocation } from 'react-router-dom';
 
 function Banner() {

@@ -1,5 +1,3 @@
-import "./card.scss"
-
 function handleClick(locationName){
     alert(`Vous avez choisi ${locationName}`);
 }

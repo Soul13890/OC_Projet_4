@@ -1,6 +1,5 @@
 import data from '../../datas/data.json'
 import Card from '../Card'
-import "./gallery.scss"
 
 function Gallery() {
     return(
