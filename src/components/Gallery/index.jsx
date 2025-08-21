@@ -8,6 +8,7 @@ function Gallery() {
                 {data.map(({id, cover, title}) => (
                     <div key={id}>
 						<Card
+                            id={id}
 							cover={cover}
 							name={title}							
 						/>

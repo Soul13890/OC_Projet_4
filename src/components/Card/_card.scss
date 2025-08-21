@@ -1,8 +1,8 @@
 .card-item {
     @include widthAndHeight(340px);    
     position: relative;
-    text-align: left;
-    color: $white;
+    text-align: left;    
+    cursor: pointer;
 
     .card-item-cover{
         @include widthAndHeight(100%);
@@ -16,6 +16,7 @@
         font-size: 18px;    
         font-weight: 700;
         max-width: 60%;
+        color: $white;
     }
 }
 
