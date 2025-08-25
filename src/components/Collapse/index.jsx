@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import Arrow from "../../assets/vector-bas.svg";
 
 const Collapse = ({ title, children }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Collapse = ({ title, children }) => {
         <div className="collapse-item">
             <div className="collapse-header">
                 <h3>{title}</h3>
-                <span className={isOpen ? "arrow up" : "arrow down"}  onClick={handleToggle}></span>
+                <img src={Arrow} alt="fleche" className={isOpen ? "arrow up" : "arrow down"}  onClick={handleToggle}/>               
             </div>
             <div ref={contentRef} className={`collapse-content ${isOpen ? "open" : ""}`}>
                 {children}
