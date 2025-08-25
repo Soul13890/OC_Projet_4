@@ -12,8 +12,8 @@
 
     .card-list{
         max-width: 1240px;
-        @include flexCenter;
-        flex-wrap: wrap;        
+        @include flexLeft;
+        flex-wrap: wrap;     
         gap: 50px;
         list-style: none;
         padding: 50px;

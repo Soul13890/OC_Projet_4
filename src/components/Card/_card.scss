@@ -20,8 +20,15 @@
     }
 }
 
+@media only screen and (max-width : 450px) {
+    .card-item, .card-item-cover {           
+        @include widthAndHeight(300px);
+    }
+}
+
 @media only screen and (max-width : 400px) {
-    .card-item, .card-item-cover {
+    .card-item, .card-item-cover {        
+        min-width: calc(100vw - 20px);
         width: 100%;
         height: 255px;
     }

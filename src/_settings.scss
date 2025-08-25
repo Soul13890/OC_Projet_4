@@ -26,6 +26,12 @@ $bannerOpacity: rgba(0, 0, 0, 0.6);
     align-items: center;
 }
 
+@mixin flexLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 @mixin widthAndHeight($size){
     width: $size;
     height: $size;

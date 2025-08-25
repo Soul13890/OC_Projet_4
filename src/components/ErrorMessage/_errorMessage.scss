@@ -1,24 +1,48 @@
+//TODO - RESPONSIVE
+
 .error-container{
     @include flexCenter;
     flex-direction: column;
-    gap: 100px;
+    gap: 113px;
     margin: 80px auto 100px auto;
 
     &-title{        
         font-size: 288px;
         color: $primary;
-        font-weight: 700;       
+        font-weight: 700; 
+        
+        @media only screen and (max-width : 600px) {
+            font-size: 144px;
+        }
+
+        @media only screen and (max-width : 400px) {
+            font-size: 96px;
+        }
     }
 
     &-text{
         font-size: 36px;
         color: $primary;
         font-weight: 500;
+        text-align: center;
+        padding: 0px 30px;
+
+        @media only screen and (max-width : 600px) {
+            font-size: 24px;
+        }
+
+        @media only screen and (max-width : 400px) {
+            font-size: 18px;
+        }
     }
 
     &-link{
         font-size: 18px;
         color: $black;
         font-weight: 500;
+
+        @media only screen and (max-width : 400px) {
+            font-size: 14px;
+        }
     }
 }
