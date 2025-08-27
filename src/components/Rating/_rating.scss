@@ -1,0 +1,20 @@
+.starRating {
+
+    list-style: none;
+
+    .fullStar {
+        fill: $primary;
+    }
+
+    .emptyStar {
+        fill: $greyRating;
+    }
+
+    @media only screen and (min-width : 1024px) {
+    
+        svg {
+            height: 1.5em;
+        }       
+    }
+}
+

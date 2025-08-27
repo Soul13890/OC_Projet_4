@@ -1,5 +1,6 @@
 import Header from "../../components/Header"
 import Carousel from "../../components/Carousel"
+import InfoLogement from "../../components/InfoLogement"
 import data from "../../datas/data.json"
 import { useParams } from "react-router-dom";
 
@@ -18,6 +19,7 @@ function Logement() {
     <div>
       <Header/>
       <Carousel items={slides}/>
+      <InfoLogement logement={logement}/>
     </div>
   )
 }
