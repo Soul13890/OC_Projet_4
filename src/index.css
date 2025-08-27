@@ -99,7 +99,7 @@
   width: 95%;
   max-width: 1240px;
   height: 415px;
-  margin: 50px auto;
+  margin: 50px auto 20px auto;
   overflow: hidden;
   border-radius: 25px;
 }
@@ -306,7 +306,7 @@ footer p {
 .card-container {
   max-width: 1240px;
   width: 95%;
-  margin: 50px auto;
+  margin: 20px auto;
   background-color: #F6F6F6;
   border-radius: 25px;
 }
