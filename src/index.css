@@ -85,7 +85,7 @@
     height: 300px;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .card-item, .card-item-cover {
     min-width: calc(100vw - 20px);
     width: 100%;
@@ -348,7 +348,7 @@ footer p {
   background-color: #F6F6F6;
   border-radius: 25px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .card-container {
     background-color: white;
     margin: 20px auto;
@@ -364,7 +364,7 @@ footer p {
   list-style: none;
   padding: 50px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .card-container .card-list {
     padding: 0px;
     gap: 22px;
