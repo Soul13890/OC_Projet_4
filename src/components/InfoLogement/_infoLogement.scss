@@ -14,6 +14,12 @@
         align-items: stretch;
         gap: 50px;
 
+        @media only screen and (max-width : 600px)
+        {
+            flex-direction: column;
+            gap: 20px;
+        }
+
         .infos-logement
         {
             display: flex;
@@ -24,11 +30,21 @@
                 font-weight: 500;
                 font-size: 36px;
                 color: $primary;
+
+                @media only screen and (max-width : 600px)
+                {                    
+                    font-size: 18px;
+                }
             }
 
             .infos-location{
                 font-weight: 500;
                 font-size: 18px;
+
+                @media only screen and (max-width : 600px)
+                {                    
+                    font-size: 14px;
+                }
             }
 
             .infos-tags-list
@@ -45,7 +61,13 @@
                     font-weight: 700;
                     font-size: 14px;
                     @include flexCenter;
-                    border-radius: 10px;  
+                    border-radius: 10px;
+                    
+                    @media only screen and (max-width : 600px)
+                    {                    
+                        height: 18px;
+                        font-size: 10px;
+                    }
                     
                     p{
                         text-wrap: nowrap;
@@ -58,20 +80,44 @@
 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;            
+            justify-content: space-between; 
+            
+            @media only screen and (max-width : 600px)
+            {
+                flex-direction: row-reverse;
+            }
 
             .infos-host{
 
                 @include flexCenter;                
-                gap: 20px;
+                gap: 20px;                
+                
+                @media only screen and (max-width : 600px)
+                {                    
+                    gap: 10px;      
+                }
 
                 .infos-name{
-                    text-align: end
+                    text-align: end;
+                    color: $primary;
+
+                    @media only screen and (max-width : 600px)
+                    {                    
+                        font-size: 12px; 
+                        font-weight: 500;
+                        max-width: 50px;                   
+                    }
                 }
 
                 .infos-picture{
                     @include widthAndHeight(64px);
                     border-radius: 32px;
+
+                    @media only screen and (max-width : 600px)
+                    {                    
+                        @include widthAndHeight(32px);                   
+                    }
+                    
                 }
             }
 
@@ -79,6 +125,11 @@
 
                 @include flexEnd;
                 gap: 10px;
+
+                @media only screen and (max-width : 600px)
+                {                    
+                    gap: 5px;                    
+                }
             }
         }
     }
@@ -88,5 +139,12 @@
         align-items: flex-start;
         gap: 76px;
         padding-top: 20px;
+
+        @media only screen and (max-width : 600px)
+        {
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+        }
     }
 }

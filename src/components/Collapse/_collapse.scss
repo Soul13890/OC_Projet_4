@@ -1,8 +1,15 @@
 .collapse-container{
-    margin: 50px auto;
+    margin: 50px auto;    
+    max-width: 1240px;
+    width: 95%;   
     @include flexCenter;
     flex-direction: column;
     gap: 30px;
+
+    @media only screen and (max-width : 600px){
+        margin: 20px auto;
+        gap: 20px; 
+    }
 }
 
 .collapse-item {
@@ -10,6 +17,11 @@
     margin: 0 auto;    
     border-radius: 5px;
     background-color: $white;
+
+    @media only screen and (max-width : 600px)
+    {
+        width: 100%;
+    }
 
     .collapse-header {
         width: 100%;
@@ -25,11 +37,20 @@
             font-weight: 700;
             font-size: 24px;
             font-style: bold;
+
+            @media only screen and (max-width : 600px){
+                font-size: 13px;
+            }
         }
 
         .arrow {           
+            @include widthAndHeight(32px);
             transition: transform 0.3s ease;
             cursor: pointer;
+
+            @media only screen and (max-width : 600px){
+                @include widthAndHeight(16px);
+            }
         }
 
         .up {
@@ -57,6 +78,10 @@
             color: $black;
             font-size: 16px;           
             padding: 20px;
+
+            @media only screen and (max-width : 600px){
+                font-size: 12px;
+            }
         }
 
         ul{
@@ -66,30 +91,6 @@
             padding: 20px;
             display: flex;
             flex-direction: column;           
-        }
-    }
-}
-
-@media only screen and (max-width : 400px) {
-    .collapse-container { 
-        margin: 20px auto;
-        gap: 20px;
-        
-        .collapse-item{
-            width: 95%;
-        }
-        
-
-        .collapse-header {
-            h3 {
-                font-size: 14px;
-            }
-        }
-
-        .collapse-content {
-            p {
-                font-size: 12px;
-            }           
         }
     }
 }

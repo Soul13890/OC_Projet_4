@@ -9,6 +9,12 @@
   overflow: hidden;
   border-radius: 25px;
 
+  @media only screen and (max-width : 600px)
+  {
+    height: 335px;
+    margin: 20px auto;
+  }
+
   &-container {
     display: flex;
     width: 100%;
@@ -42,18 +48,33 @@
     padding: 10px 15px;
     cursor: pointer;
     font-size: 1.5rem;
-    z-index: 1;
+    z-index: 1;    
 
     &-prev {
       margin-right: 10px;
       position: relative;
-      transform: translateX(100px);
+      transform: translateX(100px); 
+      @media only screen and (max-width : 600px)
+      {
+        transform: translateX(75px); 
+      }     
     }
 
     &-next {
       margin-left: 10px;
       position: relative;
       transform: translateX(-100px);
+      @media only screen and (max-width : 600px)
+      {
+        transform: translateX(-75px);
+      }
+    }
+
+    img{
+      @media only screen and (max-width : 600px)
+      {
+        @include widthAndHeight(24px);
+      }
     }
 
   }

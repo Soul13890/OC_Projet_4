@@ -10,7 +10,7 @@ const InfoLogement = ({ logement }) => {
                 <h2 className="infos-title">
                     {logement.title}
                 </h2>
-                <h3 className="infos-locations">
+                <h3 className="infos-location">
                     {logement.location}
                 </h3>
 
