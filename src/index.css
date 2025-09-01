@@ -58,11 +58,17 @@
   }
 }
 .card-item {
-  width: 340px;
-  height: 340px;
+  min-width: 340px;
+  width: 100%;
+  height: 100%;
   position: relative;
   text-align: left;
   cursor: pointer;
+}
+@media screen and (max-width: 888px) {
+  .card-item {
+    height: 255px;
+  }
 }
 .card-item .card-item-cover {
   width: 100%;
@@ -79,19 +85,6 @@
   color: white;
 }
 
-@media only screen and (max-width: 450px) {
-  .card-item, .card-item-cover {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .card-item, .card-item-cover {
-    min-width: calc(100vw - 20px);
-    width: 100%;
-    height: 255px;
-  }
-}
 .carousel {
   display: flex;
   align-items: center;
@@ -353,7 +346,7 @@ footer p {
   background-color: #F6F6F6;
   border-radius: 25px;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 888px) {
   .card-container {
     background-color: white;
     margin: 20px auto;
@@ -361,17 +354,24 @@ footer p {
 }
 .card-container .card-list {
   max-width: 1240px;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 340px;
+  gap: 60px;
   list-style: none;
   padding: 50px;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1340px) {
+  .card-container .card-list {
+    grid-template-columns: 47% 47%;
+    grid-template-rows: 340px;
+  }
+}
+@media only screen and (max-width: 888px) {
   .card-container .card-list {
     padding: 0px;
+    grid-template-columns: 100%;
+    grid-template-rows: 255px;
     gap: 22px;
   }
 }
