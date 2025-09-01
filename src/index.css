@@ -342,7 +342,7 @@ footer p {
 .card-container {
   max-width: 1240px;
   width: 95%;
-  margin: 20px auto;
+  margin: 50px auto;
   background-color: #F6F6F6;
   border-radius: 25px;
 }
@@ -357,7 +357,7 @@ footer p {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   grid-template-rows: 340px;
-  gap: 60px;
+  gap: 50px;
   list-style: none;
   padding: 50px;
 }
