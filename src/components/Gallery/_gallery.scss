@@ -15,9 +15,14 @@
         display: grid;
         grid-template-columns: 340px 340px 340px;
         grid-template-rows: 340px;
-        gap: 50px;
+        column-gap: 60px;
+        row-gap: 50px;
         list-style: none;
         padding: 50px;
+
+        &:nth-child(3n + 1){
+            width: 100%;
+        }
 
         @media only screen and (max-width : 1340px){
             grid-template-columns: 47% 47%;
