@@ -1,61 +1,58 @@
-import { useState } from 'react';
-import ArrowLeft from "../../assets/vector-left.svg"
-import ArrowRight from "../../assets/vector-right.svg"
+import { useState } from 'react'
+import ArrowLeft from '../../assets/vector-left.svg'
+import ArrowRight from '../../assets/vector-right.svg'
 
 const Carousel = ({ items }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
-  };
+    setCurrentIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1))
+  }
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
-  };
+    setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1))
+  }
 
-  if(items.length > 1)
-  {
-    return (
-      <div className="carousel">
-        <button className="carousel-button carousel-button-prev" onClick={prevSlide}>
+  return (
+    <div className="carousel">
+      {items.length > 1 && (
+        <button
+          className="carousel-button carousel-button-prev"
+          onClick={prevSlide}
+        >
           <img src={ArrowLeft} alt="arrow-left" />
         </button>
+      )}
 
-        <div className="carousel-container">
-          {items.map((item, index) => (
-            <div
-              className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
-              key={index}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+      <div className="carousel-container">
+        {items.map((item, index) => (
+          <div
+            key={index}
+            className={`carousel-item ${
+              index === currentIndex ? 'active' : ''
+            }`}
+            aria-hidden={index !== currentIndex}
+          >
+            {item}
+          </div>
+        ))}
+        {items.length > 1 && (
+          <div className="carousel-counter">
+            {currentIndex + 1} / {items.length}
+          </div>
+        )}
+      </div>
 
-        <button className="carousel-button carousel-button-next" onClick={nextSlide}>
+      {items.length > 1 && (
+        <button
+          className="carousel-button carousel-button-next"
+          onClick={nextSlide}
+        >
           <img src={ArrowRight} alt="arrow-right" />
         </button>
-      </div>
-    );
-  }
-  else{
-    return (
-      <div className="carousel">
-        <div className="carousel-container">
-          {items.map((item, index) => (
-            <div
-              className={`carousel-item ${index === currentIndex ? 'active' : ''}`}
-              key={index}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
+      )}
+    </div>
+  )
+}
 
-  
-};
-
-export default Carousel;
+export default Carousel
